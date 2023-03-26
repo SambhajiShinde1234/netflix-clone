@@ -1,0 +1,278 @@
+/*------------reset--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position:  relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    padding:  7px 20px;
+    color: #fff;
+    font-size: 1rem;
+    background: #75e110;;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+button img{
+    width: 15px;
+    margin-left: 2px;
+}
+.signin-btn{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-content {
+    position:absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%); 
+    text-align: center;
+    /* padding: 75px 0; */
+    /* margin: 0 auto; */
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-size: 600;
+    max-width: 650px;
+}
+.header-content p{
+    margin-top: 20px;
+}
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.email-box{
+    background:#fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+}
+.email-box input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-box button {
+    background: #75e110;;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+     
+}
+
+
+/* ------------- Feature --------------- */
+section {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row {
+    display: flex ;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+     
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.text-col h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.line:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #ccc9c9;
+}
+
+
+/* ----------------- FAQ --------------- */
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 50px
+}
+
+.accordian {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: trasform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+} 
+
+.faq .email-box{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+/* -------------- Footer----------- */
+
+footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+footer .lang-btn{
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 4px;
+}
+
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
